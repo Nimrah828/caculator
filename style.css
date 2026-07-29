@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+      background: url("./saad-ahmad-BQLw0OrA6F4-unsplash.jpg");
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.calculator{
+    width: 500px;
+    /* height: 400px; */
+    background:#2d3748;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+#display{
+    width:100%;
+    height:70px;
+    border:none;
+    border-radius:10px;
+    background:#fff;
+    text-align:right;
+    font-size:30px;
+    padding:10px;
+    margin-bottom:15px;
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+}
+
+button{
+    height:60px;
+    border:none;
+    border-radius:10px;
+    font-size:22px;
+    cursor:pointer;
+    background:#4b5563;
+    color:white;
+    transition:.3s;
+}
+
+button:hover{
+    background:#6b7280;
+}
+
+.equal{
+    grid-row:span 2;
+    background:#f97316;
+}
+
+.equal:hover{
+    background:#ea580c;
+}
+
+.zero{
+    grid-column:span 2;
+}
+
+.calculator{
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.3);
+}
